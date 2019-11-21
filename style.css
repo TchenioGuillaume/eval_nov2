@@ -1,0 +1,13 @@
+.modal {
+position: fixed; /* position fixée au dessus du reste */
+top: 0;
+left: 0;
+width: 100%; /* 100% en largeur */
+height: 100%; /* 100% en hauteur */
+background: rgba(0,0,0,0.9); /* RGBA permet de gérer la transparence */
+text-align: center;
+}
+
+.modal a, .modal p {
+color: white;
+}

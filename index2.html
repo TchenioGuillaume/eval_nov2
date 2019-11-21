@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+      <style>
+      .slidecontainer {
+        width: 100%;
+      }
+
+      .slider {/*  */
+        -webkit-appearance: none;
+        width: 100%;
+        height: 25px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+
+      .slider:hover {
+        opacity: 1;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #4CAF50;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #4CAF50;
+        cursor: pointer;
+      }
+      </style>
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div class="header"><p><br></p></div>
+      <div class="container">
+          <div class="row">              
+              <div class="col-md-6">
+                <div class="question">
+                  <label for="q1a">Je connais super bien<input type="radio" id="q1a" name="question1" value="a"></label><br/>
+                  <label for="q1b">Je connais mouais<input type="radio" id="q1b" name="question1" value="b"></label><br/>
+                  <label for="q1c">Je ne connais pas du tout<input type="radio" id="q1c" name="question1" value="c"></label>
+                  <hr> 
+                </div>
+
+                <p>PHP</p>
+                <div class="question">
+                  <label for="q1a">Je connais super bien<input type="radio" id="q1a" name="question2" value="a"></label><br/>
+                  <label for="q1b">Je connais mouais<input type="radio" id="q1b" name="question2" value="b"></label><br/>
+                  <label for="q1c">Je ne connais pas du tout<input type="radio" id="q1c" name="question2" value="c"></label>
+                  <hr> 
+                </div>
+
+                <p>C#</p>
+                <div class="question">
+                  <label for="q1a">Je connais super bien<input type="radio" id="q1a" name="question3" value="a"></label><br/>
+                  <label for="q1b">Je connais mouais<input type="radio" id="q1b" name="question3" value="b"></label><br/>
+                  <label for="q1c">Je ne connais pas du tout<input type="radio" id="q1c" name="question3" value="c"></label>
+                  <hr> 
+                </div>
+
+                <input type="button" name="" class="valider" value="Valider">
+                <div class="modal">
+                  <p>Résultat</p>
+                  <a href="#" class="fermer">Fermer</a>
+                </div>
+                
+                <a onclick="window.open(this.href); return false;" href="http://dd44.blogs.apf.asso.fr/media/01/02/2805078896.jpg">Télécharger</a>
+            </div>
+   
+    
+
+  
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src= "jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
